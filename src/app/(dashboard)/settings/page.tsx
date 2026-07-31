@@ -1,0 +1,3 @@
+export default function SettingsPage() {
+  return <div className="mx-auto max-w-4xl"><h1 className="text-3xl font-semibold">Settings</h1><p className="mt-2 text-sm text-slate-500">Workspace configuration is intentionally read-only in this demo.</p><div className="panel mt-8 p-6"><h2 className="font-semibold">Workspace</h2><dl className="mt-5 grid gap-5 sm:grid-cols-2"><div><dt className="text-xs font-medium uppercase text-slate-400">Product</dt><dd className="mt-1 text-sm font-medium">Orbit PM</dd></div><div><dt className="text-xs font-medium uppercase text-slate-400">Environment</dt><dd className="mt-1 text-sm font-medium">Mock API</dd></div></dl></div></div>;
+}

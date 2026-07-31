@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #d9e6ff;
+  --color-brand-500: #4f6ef7;
+  --color-brand-600: #3e58dc;
+  --color-brand-700: #3248b8;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fc; color: #202435; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+.panel { @apply rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(16,24,40,.04)]; }
+.input { @apply h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-100; }
+.btn-primary { @apply inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 text-sm font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-50; }
+.btn-secondary { @apply inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 text-sm font-medium text-slate-700 hover:bg-slate-50; }
+.skeleton { @apply animate-pulse rounded-xl bg-slate-200; }
